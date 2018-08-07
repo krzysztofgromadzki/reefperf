@@ -53,3 +53,7 @@ class LCCloudScaleDriver(CloudDriver):
         #TODO some non-blocking solution for waiting when node is ready
         lc_node_obj.driver.wait_until_running((lc_node_obj,))
         return LCCloudScaleNode(lc_node_obj, name, keys, deploy_command)
+
+
+class GoogleComputeEngineDriver(CloudDriver):
+    pass
